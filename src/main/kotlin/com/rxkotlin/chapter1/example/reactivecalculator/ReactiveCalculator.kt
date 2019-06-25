@@ -1,4 +1,4 @@
-package com.rxkotlin.chapter1
+package com.rxkotlin.chapter1.example.reactivecalculator
 
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
@@ -7,7 +7,8 @@ import java.util.regex.Pattern
 
 fun main(args: Array<String>) {
     println("Initial output with a = 15, b = 10")
-    var calculator: ReactiveCalculator = ReactiveCalculator(15, 10)
+    var calculator: ReactiveCalculator =
+        ReactiveCalculator(15, 10)
     println("Enter a = <number> or b = <number> in separate lines \nexit to exit the program")
     var line: String?
     do {
