@@ -1,4 +1,4 @@
-package com.rxkotlin.reactivecalculator.chapter2.subject
+package com.rxkotlin.reactivecalculator.chapter2.observables
 
 import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject

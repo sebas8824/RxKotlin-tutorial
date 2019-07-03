@@ -1,4 +1,4 @@
-package com.rxkotlin.reactivecalculator.chapter2.subject
+package com.rxkotlin.reactivecalculator.chapter2.observables
 
 fun main(args: Array<String>) {
     println("Initial output with a = 15, b = 10")
