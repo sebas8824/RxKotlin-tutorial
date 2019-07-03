@@ -1,4 +1,7 @@
-package com.rxkotlin.chapter2.example.reactivecalculator
+package com.rxkotlin.reactivecalculator.chapter2.coroutines
+
+import kotlinx.coroutines.experimental.CommonPool
+import kotlinx.coroutines.experimental.async
 
 fun main(args: Array<String>) {
     println("Initial output with a = 15, b = 10")
@@ -8,6 +11,9 @@ fun main(args: Array<String>) {
     var line: String?
     do {
         line = readLine()
-        calculator.handleInput(line)
+        /* suspend functions cannot be called on the main context, hence the async block */
+        async(CommonPool) {
+            calculator.handleInput(line)
+        }
     } while (line != null && !line.toLowerCase().contains("exit"))
 }
