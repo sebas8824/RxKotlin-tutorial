@@ -12,7 +12,7 @@ class Chapter3Utils {
                 }
 
                 override fun onError(e: Throwable) {
-                    println("Error occured $e")
+                    println("Error occured ${e.message}")
                 }
 
                 override fun onNext(t: Any) {
